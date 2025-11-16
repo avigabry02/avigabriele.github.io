@@ -15,62 +15,45 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li> <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hobby">Hobby</a></li> <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Hi, I'm **Gabriele Avi**</h1>
-        <h2>**Robotics & Mechatronics** Engineer</h2>
+        <h1>Hi, I'm <span>Gabriele Avi</span></h1> <h2>**Robotics & Mechatronics** Engineer</h2>
         <p>I design and develop autonomous systems and precision mechanical solutions.</p>
         <a href="#projects" class="btn">View Projects</a>
     </section>
 
     <section id="about" class="section">
-        <h2>About Me 🧑‍💻</h2>
-        <p>My passion lies in the fusion of hardware and software, especially in control systems and automation. I have experience in **structural dynamics, robotics, and design optimization**.</p>
-        <p>Currently, I am focusing on: **Advanced FEM Analysis, Mobile Robotics Control, and Lightweight Design.**</p>
+        <h2>About Me</h2>
+        <p>My passion lies in the fusion of hardware and software, especially in control systems and automation. I have experience in structural dynamics, robotics, and design optimization.</p>
+        <p>Currently, I am focusing on: Advanced FEM Analysis, Mobile Robotics Control, and Lightweight Design.</p>
     </section>
 
-    <section id="skills" class="section dark">
-        <h2>Skills 🔧</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fas fa-microchip"></i>
-                <h3>Control & Software</h3>
-                <ul>
-                    <li>**Languages:** C++, Python, MATLAB</li>
-                    <li>**Frameworks:** ROS, Gazebo, Simulink</li>
-                    <li>**Electronics:** Arduino, Microcontrollers, PID Control</li>
-                </ul>
+    <section id="education" class="section dark">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-item">
+                <img src="assets/img/uni_trento_logo.JPG" alt="University of Trento Logo"> <h3>Università di Trento</h3>
+                <p>Bachelor of Engineering in Industrial Engineering</p>
+                <p>2020 - 2023</p>
             </div>
-            <div class="skill-item">
-                <i class="fas fa-drafting-compass"></i>
-                <h3>Mechanical Design & Analysis</h3>
-                <ul>
-                    <li>**CAD:** Autodesk Inventor, nTopology</li>
-                    <li>**Analysis:** FEM, Structural Dynamics, Topology Optimization</li>
-                    <li>**Fabrication:** 3D Printing, CNC Machining, Forging Constraints</li>
-                </ul>
+            <div class="education-item">
+                <img src="assets/img/uni_poli_logo.png" alt="Politecnico di Milano Logo"> <h3>Politecnico di Milano</h3>
+                <p>Master of Science in Mechatronics and Robotics Engineering</p>
+                <p>2020 - 2023</p>
             </div>
-            <div class="skill-item">
-                <i class="fas fa-robot"></i>
-                <h3>Robotics</h3>
-                <ul>
-                    <li>**Manipulators:** Kinematics (Forward/Inverse), Path Planning</li>
-                    <li>**Mobile Systems:** Object Tracking, Autonomous Navigation Logic</li>
-                </ul>
-            </div>
-        </div>
     </section>
 
-    <section id="projects" class="section">
-        <h2>Projects 🚀</h2>
+    <section id="projects" class="section dark">
+        <h2>Projects</h2>
 
         <div class="project-card">
+            <img src="assets/img/project_robot_arm.jpeg" alt="Mobile Anthropomorphic Robotic Arm Project Image">
             <div class="project-info">
                 <h3>Bachelor's Thesis: Mobile Anthropomorphic Robotic Arm</h3>
                 <p>Theoretical and Simulink-based modeling of a 3-DOF robotic arm on a mobile platform for pick-and-place tasks. Includes Kinematic/Dynamic Analysis and PID Control evaluation.</p>
@@ -78,23 +61,26 @@
             </div>
         </div>
 
-        <div class="project-card dark">
+        <div class="project-card">
+            <img src="assets/img/project_hub_carrier.png" alt="Topology Optimization of EV Hub Carrier Project Image">
             <div class="project-info">
                 <h3>Topology Optimization of EV Hub Carrier</h3>
-                <p>Weight minimization and stiffness maximization for a Shell Eco-marathon vehicle component. Optimized design achieved **70% mass reduction** under six real-world loading conditions (Altair Hyperworks/Inspire).</p>
+                <p>Weight minimization and stiffness maximization for a Shell Eco-marathon vehicle component. Optimized design achieved 70% mass reduction under six real-world loading conditions (Altair Hyperworks/Inspire).</p>
                 <a href="https://github.com/avigabry02/Topology-optimization-of-an-electric-vehicle-hub-carrier" target="_blank" class="project-link">View Repository <i class="fab fa-github"></i></a>
             </div>
         </div>
         
         <div class="project-card">
+            <img src="assets/img/project_modal_analysis.png" alt="Experimental Modal Analysis Project Image">
             <div class="project-info">
                 <h3>Experimental Modal Analysis & FEM Validation</h3>
-                <p>Deep structural dynamics project combining **Finite Element simulations** with experimental impact hammer test data to fully characterize a metallic plate's vibrational behavior (SDOF/MDOF analysis in MATLAB).</p>
+                <p>Deep structural dynamics project combining Finite Element simulations with experimental impact hammer test data to fully characterize a metallic plate's vibrational behavior (SDOF/MDOF analysis in MATLAB).</p>
                 <a href="https://github.com/avigabry02/Experimental-Modal-Analisys" target="_blank" class="project-link">View Repository <i class="fab fa-github"></i></a>
             </div>
         </div>
 
-        <div class="project-card dark">
+        <div class="project-card">
+            <img src="assets/img/project_conveyor_fem.PNG" alt="FEM in Structural Dynamics (Conveyor System) Project Image">
             <div class="project-info">
                 <h3>FEM in Structural Dynamics (Conveyor System)</h3>
                 <p>Developed a 2D FE model of a steel conveyor structure. Analysis includes Modal Analysis, FRF computation, Moving Load simulation, and structural modification for deflection reduction (50% target met).</p>
@@ -103,6 +89,7 @@
         </div>
 
         <div class="project-card">
+            <img src="assets/img/project_fsae.PNG" alt="Formula SAE Team Projects Project Image">
             <div class="project-info">
                 <h3>Formula SAE Team Projects (Mechanical Division)</h3>
                 <p>Portfolio of projects including ARB pin dimensioning (Mathematica), Potentiometer Support CAD, and Topology Optimization of the main ARB support structure (nTopology/Ansys).</p>
@@ -112,12 +99,21 @@
         
     </section>
 
+    <section id="hobby" class="section">
+        <h2>Hobby & Photography</h2>
+        <p>Beyond engineering, I have a passion for photography, capturing moments and perspectives from my travels and daily life. Here are some of my favorite shots:</p>
+        <div class="hobby-gallery">
+            <img src="assets/img/hobby_photo1.jpg" alt="">
+            <img src="assets/img/hobby_photo2.png" alt="Passo Rolle">
+            </div>
+    </section>
+
     <section id="contact" class="section dark">
         <h2>Contact 📧</h2>
         <p>If you are interested in collaborating or have any questions, please contact me:</p>
         <div class="contact-links">
-            <a href="mailto:tua.email@esempio.com"><i class="fas fa-envelope"></i> tua.email@esempio.com</a>
-            <a href="https://www.linkedin.com/in/gabriele-avi/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:avigabry@gmail.com"><i class="fas fa-envelope"></i> avigabry@gmail.com</a>
+            <a href="https://www.linkedin.com/in/tuo-linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/avigabry02" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </section>
