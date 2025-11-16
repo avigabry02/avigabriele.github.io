@@ -1,25 +1,32 @@
 /* General Styling */
 :root {
-    --primary-bg: #1a1a2e; /* Dark Blue/Grey */
-    --secondary-bg: #2a2a3e; /* Slightly lighter */
+    /* Manteniamo i colori scuri, ma usiamo due tonalità vicine per il gradiente */
+    --primary-bg: #111122; /* Più scuro */
+    --secondary-bg: #1a1a2e; /* Meno scuro, per il gradiente e le sezioni */
     --text-color-light: #e0e0e0;
     --text-color-dark: #cccccc;
-    --accent-color: #ff8c00; /* Dark Orange/Amber */
+    --accent-color: #ff8c00; /* Accento Arancione */
     --border-color: #4a4a6e;
-    --card-bg-light: #25253a;
+    --card-bg-light: #25253a; 
     --card-bg-dark: #1f1f33;
-    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-color: rgba(0, 0, 0, 0.6); /* Ombre più scure */
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* A more technical, clean font */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-bg);
+    
+    /* MODIFICA CHIAVE: Gradiente di sfondo invece di colore piatto */
+    background: linear-gradient(180deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+    background-attachment: fixed; /* Mantiene il gradiente fisso mentre scorri */
+    
     color: var(--text-color-light);
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+
+/* ... (Mantieni il resto del file CSS invariato) ... */
 
 h1, h2, h3 {
     color: var(--text-color-light);
@@ -863,28 +870,32 @@ nav ul li a:hover::after {
     box-shadow: 0 8px 25px var(--shadow-color);
 }
 
-/* FIX Riquadro Logo Education */
-.logo-container { 
-    width: 150px; 
-    height: 80px; 
+/* FIX: Riquadro Logo Education */
+.logo-container {
+    width: 180px; 
+    height: 100px; 
     margin: 0 auto 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-bg); 
-    border-radius: 5px;
+    
+    /* MODIFICA CHIAVE: Sfondo Bianco e Bordo Tecnico */
+    background-color: #FFFFFF; /* Sfondo Bianco Puro */
+    border-radius: 4px; /* Riquadro squadrato */
     overflow: hidden;
-    border: 1px solid var(--border-color);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border: 2px solid var(--accent-color); /* Bordo di accento visibile */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
 }
 
 .logo-container img {
-    max-width: 90%; 
-    max-height: 90%;
+    /* MODIFICA CHIAVE: Aumento la dimensione massima dell'immagine */
+    max-width: 95%; 
+    max-height: 95%;
     object-fit: contain; 
-    filter: grayscale(10%); 
-    transition: filter 0.3s ease;
+    filter: grayscale(0%); /* Mantieni i colori originali */
+    transition: none;
 }
+
 
 .education-item:hover .logo-container img {
     filter: grayscale(0%);
@@ -925,24 +936,27 @@ nav ul li a:hover::after {
     box-shadow: 0 8px 25px var(--shadow-color);
 }
 
-/* FIX Riquadro Icone Skills */
+/* FIX: Riquadro Icone Skills */
 .icon-container { 
-    width: 80px; 
-    height: 80px; 
+    width: 90px; 
+    height: 90px; 
     margin: 0 auto 15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-bg);
-    border-radius: 5px;
+    
+    /* MODIFICA CHIAVE: Sfondo Bianco e Bordo Tecnico */
+    background-color: #FFFFFF; /* Sfondo Bianco Puro */
+    border-radius: 4px;
     overflow: hidden;
-    border: 1px solid var(--border-color);
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border: 2px solid var(--accent-color); /* Bordo di accento visibile */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .icon-container img { 
-    max-width: 70%; 
-    max-height: 70%;
+    /* MODIFICA CHIAVE: Aumento la dimensione massima dell'immagine */
+    max-width: 85%; 
+    max-height: 85%;
     object-fit: contain; 
 }
 
