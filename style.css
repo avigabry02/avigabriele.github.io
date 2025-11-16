@@ -454,3 +454,123 @@ footer {
         border-right: none;
     }
 }
+
+/* ... (Keep all general styling, header, hero, about sections as before) ... */
+
+/* Education Section */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.education-item {
+    background-color: var(--card-bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.logo-container { /* New: Container for Education logos */
+    width: 150px; /* Fixed width */
+    height: 80px;  /* Fixed height for a wider rectangle */
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg); /* Background for the rectangle */
+    border-radius: 5px;
+    overflow: hidden; /* Hide parts of image that exceed container */
+    border: 1px solid var(--border-color);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3); /* Subtle inner shadow */
+}
+
+.logo-container img {
+    max-width: 90%; /* Image fits inside container, with some padding */
+    max-height: 90%;
+    object-fit: contain; /* Ensures entire logo is visible without cropping */
+    filter: grayscale(10%); /* Subtle effect */
+    transition: filter 0.3s ease;
+}
+
+.education-item:hover .logo-container img {
+    filter: grayscale(0%);
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    margin: 5px 0;
+}
+
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted for more columns if needed */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-item {
+    background-color: var(--card-bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px; /* Slightly less padding */
+    text-align: center;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.icon-container { /* New: Container for Skill icons */
+    width: 80px; /* Fixed width for a square */
+    height: 80px; /* Fixed height for a square */
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+.icon-container img { /* For custom skill icons */
+    max-width: 70%; /* Image fits inside container, with some padding */
+    max-height: 70%;
+    object-fit: contain; /* Ensures entire icon is visible */
+}
+
+.skill-item h3 {
+    font-size: 1.2rem; /* Slightly smaller for skill titles */
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.skill-item p {
+    font-size: 0.9rem;
+    color: var(--text-color-dark);
+}
+
+/* ... (Keep Projects Section, Hobby Section, Contact Section, Footer, Responsive Design as before) ... */
