@@ -281,7 +281,9 @@ nav ul li a:hover::after {
 }
 
 /* Projects Section */
-.project-card {
+.project-card,
+.project-card iframe,
+.project-card video {
     background-color: var(--card-bg-light);
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -334,7 +336,9 @@ nav ul li a:hover::after {
 
 /* Responsive Project Cards */
 @media (min-width: 768px) {
-    .project-card {
+    .project-card,
+    .project-card iframe,
+    .project-card video {
         flex-direction: row; /* Image and text side-by-side on larger screens */
         text-align: left;
     }

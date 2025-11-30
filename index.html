@@ -18,6 +18,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv-section">Resume</a></li>
                 <li><a href="#hobby">Hobby</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -26,15 +27,15 @@
 
     <section class="hero">
         <h1>Hi, I'm <span>Gabriele Avi</span></h1>
-        <h2>Robotics & Mechatronics Engineer</h2>
-        <p>I design and develop autonomous systems and precision mechanical solutions.</p>
+        <h2>Mechatronics & Control Systems Engineer</h2>
+        <p>Strong passion for **robotics**, **control systems**, and **state estimation**. I turn theoretical knowledge into tangible, high-performance systems.</p>
         <a href="#projects" class="btn">View Projects</a>
     </section>
 
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I'm a Robotics and Mechatronics Engineer with a strong background in structural dynamics and design optimization. My passion is converting theoretical knowledge into tangible, high-performance systems. I thrive on complex challenges, from lightweight design in the automotive sector to developing sophisticated control systems for robotic manipulators.</p>
-        <p>Currently, I am focusing on: Advanced FEM Analysis, Mobile Robotics Control, and Lightweight Design.</p>
+        <p>Highly motivated Mechatronics Engineering graduate with a strong passion for robotics, control systems, and state estimation.</p>
+        <p>A proactive self-starter with proven academic achievements, strong teamwork and communication skills, and hands-on experience gained through Formula Student projects. Currently seeking an internship in a stimulating international environment where I can contribute effectively while further developing my technical and soft skills.</p>
     </section>
 
     <section id="education" class="section dark">
@@ -81,29 +82,29 @@
                 <div class="icon-container">
                     <img src="assets/img/inventor.png" alt="CAD icon">
                 </div>
-                <h3>CAD (Inventor, nTopology)</h3>
-                <p>Design & Optimization Software</p>
+                <h3>Inventor, Fusion360, AutoCAD, nTopology, Altair</h3>
+                <p>Technical Modelling</p>
             </div>
             <div class="skill-item">
                 <div class="icon-container">
                     <img src="assets/img/simulink.jpeg" alt="ROS icon">
                 </div>
-                <h3>ROS, Gazebo, Simulink</h3>
+                <h3>Simulink, PumaSim</h3>
                 <p>Robotics Frameworks & Simulation</p>
+            </div>
+            <div class="skill-item">
+                <div class="icon-container">
+                    <img src="assets/img/tensor.png" alt="FEM Analysis icon">
+                </div>
+                <h3>Keras, Tensorflow</h3>
+                <p>Libraries</p>
             </div>
             <div class="skill-item">
                 <div class="icon-container">
                     <img src="assets/img/arduino.jpeg" alt="Electronics icon">
                 </div>
-                <h3>Arduino, Microcontrollers</h3>
-                <p>Embedded Systems & Electronics</p>
-            </div>
-            <div class="skill-item">
-                <div class="icon-container">
-                    <img src="assets/img/altair.png" alt="FEM Analysis icon">
-                </div>
-                <h3>FEM Analysis, Structural Dynamics</h3>
-                <p>Engineering Analysis</p>
+                <h3>Arduino, UltimakerCura, Office Suite</h3>
+                <p>Other</p>
             </div>
         </div>
     </section>
@@ -112,13 +113,17 @@
         <h2>Projects</h2>
 
         <div class="project-card">
-            <img src="assets/img/project_batch_estimation.png" alt="Batch Linear Gaussian Estimation Project Image">
-            <div class="project-info">
-                <h3>Batch Estimation & Sensor Fusion for Localization</h3>
-                <p>Developed a sparse Batch Linear Gaussian Estimator fusing odometry and laser data for robust 1D robot localization and statistical validation (consistency). Solved system via Weighted Least Squares (MATLAB).</p>
-                <a href="https://github.com/avigabry02/Batch-Linear-Gaussian-Estimation" target="_blank" class="project-link">View Repository <i class="fab fa-github"></i></a>
+                <video controls loop muted autoplay playsinline 
+                    src="assets/video/batch_estimation_video.mp4" 
+                    alt="Sparse Batch Estimation Video">
+                    Il tuo browser non supporta l'elemento video.
+                </video>
+                <div class="project-content">
+                    <h3>Batch Estimation & Sensor Fusion for Localization</h3>
+                    <p>Developed a sparse Batch Linear Gaussian Estimator fusing odometry and laser data for robust 1D robot localization and statistical validation (consistency). Solved system via Weighted Least Squares (MATLAB).</p>
+                    <a href="https://github.com/avigabry02/Batch-Linear-Gaussian-Estimation" target="_blank" class="project-link">View Repository <i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </div>
         
         <div class="project-card">
             <img src="assets/img/project_robot_arm.jpeg" alt="Mobile Anthropomorphic Robotic Arm Project Image">
@@ -157,7 +162,7 @@
         </div>
 
         <div class="project-card">
-            <img src="assets/img/project_fsae.PNG" alt="Formula SAE Team Projects Project Image">
+            <img src="assets/img/project_fsae.jpeg" alt="Formula SAE Team Projects Project Image">
             <div class="project-info">
                 <h3>Formula SAE Team Projects</h3>
                 <p>Portfolio of projects including ARB pin dimensioning (Mathematica), Potentiometer Support CAD, and Topology Optimization of the main ARB support structure (nTopology/Ansys).</p>
@@ -166,6 +171,15 @@
         </div>
         
     </section>
+
+    <section id="cv-section" class="section dark">
+        <h2>Resume</h2>
+        <p>Download my resume to know more about me.</p>
+
+        <a href="assets/AVI gabriele.pdf" download="Gabriele_Avi_CV.pdf" class="btn">
+            <i class="fas fa-download"></i> Download Resume (PDF)
+        </a>
+</section>
 
     <section id="hobby" class="section">
         <h2>Hobby & Photography</h2>
